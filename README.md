@@ -1,3 +1,38 @@
 # processing
 
 ## 이곳은 프로세싱 예제 저장소
+
+//setting
+void setup()
+{
+size(800,600);
+ 
+}
+ 
+void draw()
+{
+  
+  background(255);
+  
+ellipseMode(CENTER);
+rectMode(CENTER);
+ 
+//몸통
+stroke(0);
+fill(150);
+rect(mouseX,mouseY,20,100);
+ 
+//얼굴
+fill(255);
+ellipse(mouseX,mouseY-30,60,60);
+ 
+//눈
+fill(0);
+ellipse(mouseX-19,mouseY-30,16,32);
+ellipse(mouseX+19,mouseY-30,16,32);
+ 
+//다리
+stroke(0);
+line(mouseX-10,mouseY+50,mouseX-20,mouseY+60);
+line(mouseX+10,mouseY+50,mouseX+20,mouseY+60);
+}
